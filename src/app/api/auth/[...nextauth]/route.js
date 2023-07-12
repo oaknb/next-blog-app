@@ -12,7 +12,6 @@ const handler = NextAuth({
       id: "credentials",
       name: "Credentials",
       async authorize(credentials) {
-        //Check if the user exists.
         await connect();
 
         try {
